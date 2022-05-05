@@ -9,3 +9,8 @@ heap.c:37:15: error: ‘new’ is used uninitialized in this function [-Werror=u
 cc1: all warnings being treated as errors
 Compilation failed
 3cca8f4
+Thu May  5 15:29:56 UTC 2022: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+d01d724
