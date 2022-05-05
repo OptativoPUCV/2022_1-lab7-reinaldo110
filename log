@@ -48,3 +48,14 @@ Thu May  5 15:39:21 UTC 2022:
  tests:  1|3
 total_score: 10/70
 b7decd0
+Thu May  5 15:42:16 UTC 2022: 
+ heap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:0:
+heap.c: In function ‘heap_top’:
+heap.c:21:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+     if (pq->capac = 0) return NULL;
+         ^~
+cc1: all warnings being treated as errors
+Compilation failed
+46f16b5
