@@ -1,0 +1,11 @@
+Thu May  5 15:29:13 UTC 2022: 
+ heap.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+test.c: In function ‘createHeap’:
+heap.c:37:15: error: ‘new’ is used uninitialized in this function [-Werror=uninitialized]
+    new->capac = 3;
+    ~~~~~~~~~~~^~~
+cc1: all warnings being treated as errors
+Compilation failed
+3cca8f4
