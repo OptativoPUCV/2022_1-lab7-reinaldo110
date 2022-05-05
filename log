@@ -32,3 +32,8 @@ heap.c:40:4: error: conversion to non-scalar type requested
     ^~~
 Compilation failed
 39409df
+Thu May  5 15:33:58 UTC 2022: 
+ heap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|0
+05a1735
