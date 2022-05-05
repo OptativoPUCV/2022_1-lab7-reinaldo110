@@ -19,3 +19,16 @@ Thu May  5 15:33:19 UTC 2022:
  1 file changed, 2 insertions(+), 1 deletion(-)
  tests:  0|0
 0d6e842
+Thu May  5 15:33:39 UTC 2022: 
+ heap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+heap.c: In function ‘createHeap’:
+heap.c:37:4: error: conversion to non-scalar type requested
+    Heap * new = (Heap) malloc (sizeof(Heap));
+    ^~~~
+heap.c:40:4: error: conversion to non-scalar type requested
+    new->heapArray = (heapElem) malloc (sizeof(heapElem));
+    ^~~
+Compilation failed
+39409df
