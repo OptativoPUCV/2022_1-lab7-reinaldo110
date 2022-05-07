@@ -91,3 +91,14 @@ heap.c:71:1: error: expected ‘;’ before ‘}’ token
  ^
 Compilation failed
 dc07cfa
+Sat May  7 19:03:21 UTC 2022: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+heap.c: In function ‘heap_pop’:
+heap.c:69:6: error: ‘pq’ is a pointer; did you mean to use ‘->’?
+    pq.size--;
+      ^
+      ->
+Compilation failed
+7c451d6
