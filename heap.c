@@ -67,7 +67,7 @@ void heap_pop(Heap* pq){
    pq->heapArray[pq->size-1].data = NULL;
 
    pq->size--;
-   int hijoIzq, hijoDer, hijoNuevo;
+   int hijoIzq, hijoDer;
 
    for (int i = 0; i < pq->size; i++)
    {

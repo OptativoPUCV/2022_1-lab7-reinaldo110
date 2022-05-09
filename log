@@ -131,3 +131,9 @@ heap.c:70:26: error: unused variable ‘hijoNuevo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 5512554
+Mon May  9 01:20:00 UTC 2022: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  8|0
+total_score: 70/70
+fdcc996
