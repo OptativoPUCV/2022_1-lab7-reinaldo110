@@ -16,14 +16,11 @@ typedef struct Heap{
   int capac;
 } Heap;
 
-
 void* heap_top(Heap* pq){
     if (pq->capac == 0 || pq->size == 0) return NULL;
     void * dato = pq->heapArray[0].data;
     return dato;
 }
-
-
 
 void heap_push(Heap* pq, void* data, int priority){
   if (pq->capac == pq->size) 
@@ -53,7 +50,6 @@ void heap_push(Heap* pq, void* data, int priority){
   pq->size++;
 }
 
-
 void heap_pop(Heap* pq){
    void * data = pq->heapArray[pq->size-1].data;
    int pri = pq->heapArray[pq->size-1].priority;
@@ -67,7 +63,7 @@ void heap_pop(Heap* pq){
    pq->heapArray[pq->size-1].data = NULL;
 
    pq->size--;
-   int hijoIzq, hijoDer;
+   int hijoIzq, hijoDer, hijoNuevo;
 
    for (int i = 0; i < pq->size; i++)
    {
@@ -83,6 +79,7 @@ void heap_pop(Heap* pq){
          {
             pq->heapArray[i].data = pq->heapArray[hijoDer].data;
             pq->heapArray[hijoDer].data = data;
+
             pq->heapArray[i].priority = pq->heapArray[hijoDer].priority;
             pq->heapArray[hijoDer].priority = pri;
             i = hijoDer;
@@ -94,6 +91,7 @@ void heap_pop(Heap* pq){
          {
             pq->heapArray[i].data = pq->heapArray[hijoIzq].data;
             pq->heapArray[hijoIzq].data = data;
+
             pq->heapArray[i].priority = pq->heapArray[hijoIzq].priority;
             pq->heapArray[hijoIzq].priority = pri;
             i = hijoDer;
