@@ -120,3 +120,14 @@ Mon May  9 01:01:52 UTC 2022:
  tests:  7|1
 total_score: 45/70
 43edb58
+Mon May  9 01:19:50 UTC 2022: 
+ heap.c | 34 +++++++++++++++++++++++++++++++++-
+ 1 file changed, 33 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+heap.c: In function ‘heap_pop’:
+heap.c:70:26: error: unused variable ‘hijoNuevo’ [-Werror=unused-variable]
+    int hijoIzq, hijoDer, hijoNuevo;
+                          ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5512554
